@@ -5,16 +5,18 @@ html {
 
 body {
     margin: 0 auto;
-    padding: 2em 2em 4em;
+    padding: 2em 2em 2em;
     max-width: 800px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5em;
-    color: #545454;
+    color: #fff;
     background-color: #ffffff;
     -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
     -moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
 }
 
 h1{
@@ -44,9 +46,10 @@ h3, h4, h5, h6 {
     border-radius: 20px;
 }
 
-#body{
+.section{
+    display:none;
     margin-top: 1em;
-    background-color: #21d3d3;
+    background-color: #545454;
     padding: .3em 2em .5em;
     border-radius: 20px;
 }
@@ -65,7 +68,8 @@ h3, h4, h5, h6 {
 span{
     font-weight: 100;
     font-style: normal;
-    color: #7c7c7c; 
+    color: #21d3d3; 
+    float: right;
 }
 
 img {
