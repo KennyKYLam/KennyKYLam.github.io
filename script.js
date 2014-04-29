@@ -1,19 +1,11 @@
 $(document).ready(function () {
     $('#home').css('display', 'block');
 
-$('.button').mouseenter(function () {
-    
-    $(this).stop().fadeTo('fast', 0.75);
-});
-    
-$('.button').mouseleave(function () {
-    
-    $(this).stop().fadeTo('fast', 1);
-});
     
 $('#workButton').click(function () {
     if($('#work').css('display') === 'none')
     {
+        $('.button').css('opacity', '1');
         $('#workButton').css('opacity', '0.75');
         $('.section').css('display', 'none');
         $('#work').css('display', 'block');
@@ -29,6 +21,7 @@ $('#workButton').click(function () {
 $('#volunteeringButton').click(function () {
     if($('#volunteering').css('display') === 'none')
     {
+        $('.button').css('opacity', '1');
         $('#volunteeringButton').css('opacity', '0.75');
         $('.section').css('display', 'none');
         $('#volunteering').css('display', 'block');
@@ -45,6 +38,7 @@ $('#volunteeringButton').click(function () {
     $('#activitiesButton').click(function () {
     if($('#activities').css('display') === 'none')
     {
+        $('.button').css('opacity', '1');
         $('#activitiesButton').css('opacity', '0.75');
         $('.section').css('display', 'none');
         $('#activities').css('display', 'block');
@@ -62,6 +56,7 @@ $('#volunteeringButton').click(function () {
     $('#educationButton').click(function () {
     if($('#education').css('display') === 'none')
     {
+        $('.button').css('opacity', '1');
         $('#educationButton').css('opacity', '0.75');
         $('.section').css('display', 'none');
         $('#education').css('display', 'block');
@@ -78,6 +73,7 @@ $('#volunteeringButton').click(function () {
     $('#summaryButton').click(function () {
     if($('#summary').css('display') === 'none')
     {
+        $('.button').css('opacity', '1');
         $('#summaryButton').css('opacity', '0.75');
         $('.section').css('display', 'none');
         $('#summary').css('display', 'block');
