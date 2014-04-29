@@ -5,7 +5,7 @@ $('.button').mouseenter(function () {
     $(this).stop().fadeTo('fast', 0.75);
 });
     
-$(this).mouseleave(function () {
+$('.button').mouseleave(function () {
     
     $(this).stop().fadeTo('fast', 1);
 });
@@ -15,6 +15,12 @@ $('#workButton').click(function () {
     {
         $('#workButton').css('opacity', '0.75');
         $('#work').css('display', 'block');
+        
+        $('#volunteering').css('display', 'none');
+        $('#activities').css('display', 'none');
+        $('#education').css('display', 'none');
+        $('#summary').css('display', 'none');
+        
     }
     else
     {
@@ -28,6 +34,11 @@ $('#volunteeringButton').click(function () {
     {
         $('#volunteeringButton').css('opacity', '0.75');
         $('#volunteering').css('display', 'block');
+        
+        $('#work').css('display', 'none');
+        $('#activities').css('display', 'none');
+        $('#education').css('display', 'none');
+        $('#summary').css('display', 'none');
     }
     else
     {
@@ -42,6 +53,11 @@ $('#volunteeringButton').click(function () {
     {
         $('#activitiesButton').css('opacity', '0.75');
         $('#activities').css('display', 'block');
+        
+        $('#volunteering').css('display', 'none');
+        $('#work').css('display', 'none');
+        $('#education').css('display', 'none');
+        $('#summary').css('display', 'none');
     }
     else
     {
@@ -56,6 +72,11 @@ $('#volunteeringButton').click(function () {
     {
         $('#educationButton').css('opacity', '0.75');
         $('#education').css('display', 'block');
+        
+        $('#volunteering').css('display', 'none');
+        $('#activities').css('display', 'none');
+        $('#work').css('display', 'none');
+        $('#summary').css('display', 'none');
     }
     else
     {
@@ -70,6 +91,11 @@ $('#volunteeringButton').click(function () {
     {
         $('#summaryButton').css('opacity', '0.75');
         $('#summary').css('display', 'block');
+        
+        $('#volunteering').css('display', 'none');
+        $('#activities').css('display', 'none');
+        $('#education').css('display', 'none');
+        $('#work').css('display', 'none');
     }
     else
     {
