@@ -3,6 +3,7 @@ html {
     -webkit-font-smoothing: antialiased;
 }
 
+
 body {
     margin: 0 auto;
     padding: 2em 2em 2em;
@@ -99,6 +100,15 @@ img {
     border-style: none;
     display: inline-block;
     padding: 0em 0.75em 0 0.75em;
+}
+
+#uwlogo{
+    width: 300px;
+    height: auto;
+    border-style: none;
+    display: inline-block;
+    padding: 0em 0.75em 0 0.75em;
+    float: right;
 }
 
 
