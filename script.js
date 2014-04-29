@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    $('#home').css('display', 'block');
 
 $('.button').mouseenter(function () {
     
@@ -14,12 +15,8 @@ $('#workButton').click(function () {
     if($('#work').css('display') === 'none')
     {
         $('#workButton').css('opacity', '0.75');
+        $('.section').css('display', 'none');
         $('#work').css('display', 'block');
-        
-        $('#volunteering').css('display', 'none');
-        $('#activities').css('display', 'none');
-        $('#education').css('display', 'none');
-        $('#summary').css('display', 'none');
         
     }
     else
@@ -33,12 +30,9 @@ $('#volunteeringButton').click(function () {
     if($('#volunteering').css('display') === 'none')
     {
         $('#volunteeringButton').css('opacity', '0.75');
+        $('.section').css('display', 'none');
         $('#volunteering').css('display', 'block');
         
-        $('#work').css('display', 'none');
-        $('#activities').css('display', 'none');
-        $('#education').css('display', 'none');
-        $('#summary').css('display', 'none');
     }
     else
     {
@@ -52,12 +46,10 @@ $('#volunteeringButton').click(function () {
     if($('#activities').css('display') === 'none')
     {
         $('#activitiesButton').css('opacity', '0.75');
+        $('.section').css('display', 'none');
         $('#activities').css('display', 'block');
         
-        $('#volunteering').css('display', 'none');
-        $('#work').css('display', 'none');
-        $('#education').css('display', 'none');
-        $('#summary').css('display', 'none');
+
     }
     else
     {
@@ -71,12 +63,9 @@ $('#volunteeringButton').click(function () {
     if($('#education').css('display') === 'none')
     {
         $('#educationButton').css('opacity', '0.75');
+        $('.section').css('display', 'none');
         $('#education').css('display', 'block');
         
-        $('#volunteering').css('display', 'none');
-        $('#activities').css('display', 'none');
-        $('#work').css('display', 'none');
-        $('#summary').css('display', 'none');
     }
     else
     {
@@ -90,12 +79,9 @@ $('#volunteeringButton').click(function () {
     if($('#summary').css('display') === 'none')
     {
         $('#summaryButton').css('opacity', '0.75');
+        $('.section').css('display', 'none');
         $('#summary').css('display', 'block');
         
-        $('#volunteering').css('display', 'none');
-        $('#activities').css('display', 'none');
-        $('#education').css('display', 'none');
-        $('#work').css('display', 'none');
     }
     else
     {
