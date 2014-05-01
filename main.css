@@ -6,7 +6,7 @@ html {
 
 body {
     margin: 0 auto;
-    padding: 2px 2em 2em;
+    padding: 2em 2em 2em;
     max-width: 800px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;
@@ -20,6 +20,10 @@ body {
     border-bottom-right-radius: 20px;
     margin-bottom: 2em;
     
+}
+
+#awesome{
+    text-align: center; 
 }
 
 h1{
@@ -97,7 +101,7 @@ img {
     -webkit-animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
 }
 
-.link{
+#link{
     width: 30px;
     height: auto;
     border-style: none;
@@ -114,12 +118,14 @@ img {
     float: right;
 }
 
+
 #car{
     height:450px;
     width:700px;
-    background-color: #a5a5a5;
+    background-color: #545454;
     margin: 0 auto;
-    z-index:-2;
+    position: relative;
+    z-index:1;
 }
 
 #carroof{
@@ -127,31 +133,38 @@ img {
     height:200px;
     border-top-left-radius: 60%;
     border-top-right-radius: 55%;
-    background-color: #3bac2e;
+    background-color: #21d3d3;
     position:absolute;
-    top:450px;
-    left:550px;
+    top:125px;
+    left:200px;
+    z-index:2;
+    -webkit-animation: carroofmove linear 0.5s; 
 }
 
-#carfront{
-    height:50px;
-    width:50px;
-    border-top-left-radius: 20%;
+#carwindow{
+    width:250px;
+    height:100px;
+    background-color: #d9d9d9;
+    border-top-left-radius: 60%;
+    border-top-right-radius: 55%;
     position:absolute;
-    top:50px;
-    left:50px;
+    top:150px;
+    left:250px;
+    z-index:3;
+    
 }
 
 #carbody{
     width:600px;
     height:150px;
-    background-color: #3bac2e;
+    background-color: #21d3d3;
     border-top-left-radius: 90%;
     border-top-right-radius: 80%;
     position:absolute;
-    top: 500px;
-    left:400px;
-    
+    top: 200px;
+    left:50px;
+    z-index:4;
+    -webkit-animation: carbodymove linear 0.25s;   
 } 
                     
 #wheelone{
@@ -159,10 +172,10 @@ img {
     width:100px;
     border-radius: 50%;
     position:absolute;
-    top: 600px;
-    left: 475px;
-    background-color: #434343;
-    -webkit-animation: wheel1move 2s;
+    top: 300px;
+    left:100px;
+    background-color: #000;
+    -webkit-animation: wheel1move linear 0.25s;
 }
 
 #wheeltwo{
@@ -170,49 +183,68 @@ img {
     width:100px;
     border-radius: 50%;
     position:absolute;
-    top: 600px;
-    left: 800px;
-    background-color: #434343;
-    -webkit-animation: wheel2move 2s;
+    top: 300px;
+    left: 450px;
+    background-color: #000;
     
+    -webkit-animation: wheel2move linear 0.25s;   
+}
+
+@-webkit-keyframes carroofmove
+{
+    from 
+    {
+    top: 0px;
+    left: 0px;
+    }
+    to 
+    {
+    top: 125px;
+    left: 200px;
+    }
+}
+
+@-webkit-keyframes carbodymove
+{
+    from 
+    {
+    top: 200px;
+    left: 1000px;
+    }
+    to 
+    {
+    top: 200px;
+    left: 50px;
+    }
 }
 
 @-webkit-keyframes wheel1move
 {
-    20% 
-    { 
-    top: 600px;
-    left: 400px;
+    from 
+    {
+    top: 100px;
+    left: 100px;
     }
-    60% 
+    to 
     {
-    top: 600px;
-    left: 550px;
-    }   
-    100%
-    {
-    top: 600px;
-    left: 475px;
+    top: 300px;
+    left: 100px;
     }
 }
 
 @-webkit-keyframes wheel2move
 {
-    20% 
-    { 
-    top: 600px;
-    left: 700px;
-    }
-    60% 
+    from 
     {
-    top: 600px;
-    left: 850px;
-    }   
-    100%
-    {
-    top: 600px;
-    left: 800px;
+    top: 100px;
+    left: 450px;
     }
+    to 
+    {
+    top: 300px;
+    left: 450px;
+    }
+}
 
 .button:hover
 {
