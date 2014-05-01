@@ -69,12 +69,15 @@ h3, h4, h5, h6 {
     background-color: #21d3d3;
     display: inline-block;
     padding: .5em 0 .5em 0;
-    width: 9em;
+    width: 19%;
     text-align: center;
     border-radius: 5px;
-    margin: auto;
-
-    
+    margin: 0 auto;
+    margin-top: 5px;
+    height: 50%;
+    transition-property: opacity;
+    transition-duration: .2s;
+    opacity: 1;
 }
 
 span{
@@ -111,6 +114,7 @@ img {
     float: right;
 }
 
+<<<<<<< HEAD
 #car{
     height:450px;
     width:700px;
@@ -210,6 +214,11 @@ img {
     top: 600px;
     left: 800px;
     }
+=======
+.button:hover
+{
+    opacity: 0.75;
+>>>>>>> 2bc0647a991fb94126089d71ea76dc87bd0d0771
 }
 
 @keyframes colorize {
@@ -229,5 +238,3 @@ img {
         -webkit-filter: grayscale(0%);
     }
 }
-
-
