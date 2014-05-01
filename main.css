@@ -114,7 +114,6 @@ img {
     float: right;
 }
 
-<<<<<<< HEAD
 #car{
     height:450px;
     width:700px;
@@ -214,11 +213,10 @@ img {
     top: 600px;
     left: 800px;
     }
-=======
+
 .button:hover
 {
     opacity: 0.75;
->>>>>>> 2bc0647a991fb94126089d71ea76dc87bd0d0771
 }
 
 @keyframes colorize {
