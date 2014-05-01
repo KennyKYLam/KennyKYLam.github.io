@@ -97,7 +97,7 @@ img {
     -webkit-animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
 }
 
-#link{
+.link{
     width: 30px;
     height: auto;
     border-style: none;
