@@ -22,7 +22,7 @@ body {
     
 }
 
-#awesome{
+.bodytext{
     text-align: center; 
 }
 
@@ -159,8 +159,8 @@ img {
     width:600px;
     height:150px;
     background-color: #21d3d3;
-    border-top-left-radius: 90%;
-    border-top-right-radius: 80%;
+    border-top-left-radius: 80%;
+    border-top-right-radius: 60%;
     border-bottom-left-radius: 1em;
     border-bottom-right-radius: 1em;
     position:absolute;
