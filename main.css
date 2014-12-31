@@ -1,380 +1,177 @@
 
-    html,
-
-    body {
-
-        padding: 0;
-
-        margin: 0;
-
-        font-family: 'Roboto', sans-serif;
-
-        color: #fff;
-
-        background-color: #2196F3;
-
-    }
-
-    h2 {
-
-        color: #2196F3;
-
-    }
-
-    a {
-
-        text-decoration: none;
-
-        color: #050a24;
-
-    }
-
-    a:hover {
-
-        color: #262665;
-
-    }
-
-    #top {
-
-        position: absolute;
-
-        top: 0;
-
-    }
-
-    .jumbotron {
-
-        width: 100%;
-
-        height: 700px;
-
-        background-color: #050a24;
-
-    }
-
-    .websitelogo {
-
-        width: 40%;
-
-        position: absolute;
-
-        padding: 20px;
-
-        top: 40%;
-
-        left: 30%;
-
-        font-size: 4em;
-
-        text-align: center;
-
-        //background-color:inherit;
-
-        z-index: 500;
-
-    }
-
-    .planet {
-
-        border-radius: 50%;
-
-        box-shadow: 8px 9px 10px rgba(0, 0, 0, 0.3);
-
-        text-align: center;
-
-        color: #050a24;
-
-        font-size: 1.3em;
-
-        z-index: 500;
-
-    }
-
-    .planet:hover {
-
-        opacity: 0.6;
-
-    }
-
-    #infobutton1 {
-
-        position: absolute;
-
-        top: 50%;
-
-        left: 15%;
-
-        width: 110px;
-
-        height: 110px;
-
-        padding: 20px;
-
-        background-color: #BBDEFB;
-
-    }
-
-    #infobutton2 {
-
-        position: absolute;
-
-        top: 15%;
-
-        left: 30%;
-
-        width: 90px;
-
-        height: 90px;
-
-        padding: 20px;
-
-        background-color: #90CAF9;
-
-    }
-
-    #infobutton3 {
-
-        position: absolute;
-
-        bottom: 5%;
-
-        left: 45%;
-
-        width: 80px;
-
-        height: 80px;
-
-        padding: 30px;
-
-        background-color: #64B5F6;
-
-    }
-
-    #infobutton4 {
-
-        position: absolute;
-
-        top: 15%;
-
-        left: 60%;
-
-        width: 120px;
-
-        height: 120px;
-
-        padding: 20px;
-
-        background-color: #42A5F5;
-
-    }
-
-    #infobutton5 {
-
-        position: absolute;
-
-        top: 50%;
-
-        left: 75%;
-
-        width: 100px;
-
-        height: 100px;
-
-        padding: 20px;
-
-        background-color: #2196F3;
-
-    }
-
-    .infocot {
-
-        width: 100%;
-
-        height: auto;
-
-        background-color: #fff;
-
-        margin: 0 auto;
-
-        padding: 20px 0;
-
-        background-color: #d9e1ff;
-
-    }
-
-    .info {
-
-        width: 90%;
-
-        max-width: 750px;
-
-        height: auto;
-
-        color: #101010;
-
-        margin: 20px auto;
-
-        padding: 10px;
-
-    }
-
-    .footer {
-
-        padding: 15px;
-
-        display: inline;
-
-        color: #050a24;
-
-        float: right;
-
-    }
-
-    .footer ul {
-
-        display: inline;
-
-        padding: 0px;
-
-    }
-
-    .footer li {
-
-        display: inline;
-
-        padding: 10px;
-
-    }
-
-    .dot {
-
-        position: fixed;
-
-        width: 30px;
-
-        height: 30px;
-
-        border-radius: 30px;
-
-        background-color: #4bc2f1;
-
-        z-index: 400;
-
-    }
-
-    #container {
-
-        perspective: 10px;
-
-        -webkit-perspective: 50px;
-
-        -moz-perspective: 50px;
-
-        -ms-perspective: 50px;
-
-        transform-origin: 50% 100%;
-
-        -webkit-transform-origin: 50% 100%;
-
-        -moz-transform-origin: 50% 100%;
-
-        -ms-transform-origin: 50% 100%;
-
-        opacity: 0.55;
-
-    }
-
-    .topnavbar {
-
-        display: none;
-
-        width: 100%;
-
-        height: auto;
-
-        padding: 10px;
-
-        background-color: #2196F3;
-
-        position: fixed;
-
-        top: 0;
-
-    }
-
-    .topnavbar ul {
-
-        display: inline;
-
-        padding: 0px;
-
-    }
-
-    .topnavbar li {
-
-        display: inline;
-
-        padding: 10px;
-
-    }
-
-    .topnavbar a:hover {
-
-        color: #fff;
-
-    }
-
-    .logo {
-
-        height: auto;
-
-        border-style: none;
-
-        display: inline-block;
-
-        padding: 0em 0.75em 0 0.75em;
-
-        float: right;
-
-    }
-
-    .projectimg {
-
-        display: inline;
-
-        padding: 10px;
-
-    }
-
-    .externallinks {
-
-        color: #2196F3;
-
-    }
-
-    .externallinks:hover {
-
-        opacity: 0.75;
-
-    }
-
-    .stars {
-
-        border-radius: 50%;
-
-        box-shadow: 8px 9px 10px rgba(0, 0, 0, 0.3);
-
-        position: absolute;
-
-        top: 50%;
-
-        left: 50%;
-
-        width: 5px;
-
-        height: 5px;
-
-        background-color: #2196F3;
-
-    }
+     html,
+ body {
+     padding: 0;
+     margin: 0;
+     font-family: 'Roboto', sans-serif;
+     color: #fff;
+     background-color: #050a24;
+ }
+ h2 {
+     color: #2196F3;
+ }
+ a {
+     text-decoration: none;
+     color: #050a24;
+ }
+ a:hover {
+     color: #262665;
+ }
+ #top {
+     position: absolute;
+     top: 0;
+ }
+ .jumbotron {
+     margin: 0;
+     width: 100%;
+     height: 500px;
+     background-color: #050a24;
+ }
+ .websitelogo {
+     width: 100%;
+     margin-top: 150px;
+     font-size: 5em;
+     text-align: center;
+     z-index: 500;
+ }
+ .planetdiv {
+     width: 100%;
+     max-width: 1000px;
+     text-align: center;
+     margin: 50px auto 0px auto;
+ }
+ .planet {
+     border-radius: 50%;
+     box-shadow: 8px 9px 10px rgba(0, 0, 0, 0.3);
+     text-align: center;
+     color: #050a24;
+     font-size: 1.2em;
+     z-index: 500;
+     display: inline-block;
+     margin: 10px 20px;
+     padding: 20px;
+ }
+ .planet:hover {
+     opacity: 0.6;
+ }
+ #infobutton1 {
+     width: 80px;
+     height: 80px;
+     background-color: #BBDEFB;
+ }
+ #infobutton2 {
+     width: 90px;
+     height: 90px;
+     background-color: #90CAF9;
+ }
+ #infobutton3 {
+     width: 120px;
+     height: 120px;
+     background-color: #64B5F6;
+ }
+ #infobutton4 {
+     width: 100px;
+     height: 100px;
+     background-color: #42A5F5;
+ }
+ #infobutton5 {
+     width: 100px;
+     height: 100px;
+     background-color: #2196F3;
+ }
+ .infocot {
+     width: 100%;
+     height: auto;
+     background-color: #fff;
+     margin: 0 auto;
+     padding: 20px 0;
+     background-color: #d9e1ff;
+ }
+ .info {
+     width: 90%;
+     max-width: 750px;
+     height: auto;
+     color: #101010;
+     margin: 20px auto;
+     padding: 10px;
+ }
+ .footer {
+     padding: 15px;
+     display: inline;
+     color: #fff;
+     float: right;
+ }
+ .footer ul {
+     display: inline;
+     padding: 0px;
+ }
+ .footer li {
+     display: inline;
+     padding: 10px;
+ }
+ .dot {
+     position: fixed;
+     width: 30px;
+     height: 30px;
+     border-radius: 30px;
+     background-color: #4bc2f1;
+     z-index: 400;
+ }
+ #container {
+     perspective: 10px;
+     -webkit-perspective: 50px;
+     -moz-perspective: 50px;
+     -ms-perspective: 50px;
+     transform-origin: 50% 100%;
+     -webkit-transform-origin: 50% 100%;
+     -moz-transform-origin: 50% 100%;
+     -ms-transform-origin: 50% 100%;
+     opacity: 0.55;
+ }
+ .topnavbar {
+     display: none;
+     width: 100%;
+     height: auto;
+     padding: 10px;
+     background-color: #2196F3;
+     position: fixed;
+     top: 0;
+ }
+ .topnavbar ul {
+     display: inline;
+     padding: 0px;
+ }
+ .topnavbar li {
+     display: inline;
+     padding: 10px;
+ }
+ .topnavbar a:hover {
+     color: #fff;
+ }
+ .logo {
+     height: auto;
+     border-style: none;
+     display: inline-block;
+     padding: 0em 0.75em 0 0.75em;
+     float: right;
+ }
+ .projectimg {
+     display: inline;
+     padding: 10px;
+ }
+ .externallinks {
+     color: #2196F3;
+ }
+ .externallinks:hover {
+     opacity: 0.75;
+ }
+ .stars {
+     border-radius: 50%;
+     box-shadow: 8px 9px 10px rgba(0, 0, 0, 0.3);
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     width: 5px;
+     height: 5px;
+     background-color: #2196F3;
+ }
