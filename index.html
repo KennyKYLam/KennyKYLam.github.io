@@ -1,244 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="no-js">
 
 <head>
-    <title>Kenny Lam</title>
-    <link rel="shortcut icon" href="images/KLlogo.png">
-    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <link href='main.css' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--[if IE]><![endif]-->
+    <title>Kenny</title>
+    <link rel="shortcut icon" href="res/KLlogo.ico">
+    <meta name="description" content="Kenny's portfolio">
+    <meta name="keywords" content="Kenny, kennykylam, superkenny101, kenny lam">
+    <meta name="author" content="Kenny">
+    <meta name="designer" content="Kenny">
+    <!--[if IE]><link rel="shortcut icon" href="res/KLlogo.png"><![endif]-->
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script src="javascript/home.js"></script>
 </head>
 
-<body>
-    <div id="top"></div>
-    <div class="topnavbar">
-        <ul>
-            <li><a href="#info1">About</a>
-            </li>
-            <li><a href="#info2">Skills</a>
-            </li>
-            <li><a href="#info3">Experience</a>
-            </li>
-            <li><a href="#info4">Projects</a>
-            </li>
-            <li><a href="#info5">Education</a>
-            </li>
-            <li><a href="#info6">Contact</a>
-            </li>
-        </ul>
-    </div>
-    <div id="container"></div>
+<body ng-app="portfolio" ng-controller="MainController">
+    <nav>
+        <div class="green nav-wrapper">
+            <a href="#!" class="brand-logo">KENNY LAM</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#about">Profile</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="collapsible.html">Life</a></li>
+                <li><a href="mobile.html">Blog</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+                <li><a href="#about">Profile</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="collapsible.html">Javascript</a></li>
+                <li><a href="mobile.html">Mobile</a></li>
+            </ul>
+        </div>
+    </nav>
     <div class="jumbotron">
-        <!--
-        1-about
-        2-skills
-        3-experience
-        4-projects
-        5-education
-        -->
-        <div class="websitelogo">Kenny Lam</div>
-        <div class="planetdiv">
-            <a href="#info1">
-                <div class="planet" id="infobutton1">About</div>
-            </a>
-            <a href="#info2">
-                <div class="planet" id="infobutton2">Skills</div>
-            </a>
-            <a href="#info3">
-                <div class="planet" id="infobutton3">Experience</div>
-            </a>
-            <a href="#info4">
-                <div class="planet" id="infobutton4">Projects</div>
-            </a>
-            <a href="#info5">
-                <div class="planet" id="infobutton5">Education</div>
-            </a>
+        <div class="block-board">
+        </div>
+        <img class="rocket" src="res/spaceRocket.png">
+        <svg class="ufo" xmlns="http://www.w3.org/2000/svg">
+            <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+            <g>
+                <title>UFO</title>
+                <ellipse ry="34.999999" rx="39" id="svg_3" cy="35.750003" cx="74.75" stroke-opacity="null" stroke-width="1.5" fill="#aaffff" />
+                <ellipse ry="17.000006" rx="74.000002" id="svg_1" cy="54.750006" cx="74.750002" stroke-width="1.5" fill="#999999" />
+                <ellipse ry="7" rx="7" id="svg_5" cy="54.750002" cx="45.75" stroke-opacity="null" stroke-width="1.5" fill="#ffff00" />
+                <ellipse ry="7" rx="7" id="svg_6" cy="54.750002" cx="71.75" stroke-opacity="null" stroke-width="1.5" fill="#ffff00" />
+                <ellipse ry="7" rx="7" id="svg_7" cy="54.750002" cx="99.75" stroke-opacity="null" stroke-width="1.5" fill="#ffff00" />
+                <ellipse ry="10.5" rx="10.5" id="svg_8" cy="24.250002" cx="74.25" stroke-opacity="null" stroke-width="1.5" fill="#05af4c" />
+                <ellipse ry="2.124972" rx="2.124972" id="svg_9" cy="23.472492" cx="69.571344" stroke-opacity="null" stroke-width="1.5" stroke="null" fill="#ffffff" />
+                <ellipse ry="2.124972" rx="2.124972" id="svg_10" cy="23.472492" cx="79.071218" stroke-opacity="null" stroke-width="1.5" stroke="null" fill="#ffffff" />
+                <path id="svg_12" d="m64.946404,13.347626" opacity="0.5" stroke-opacity="null" stroke-width="1.5" stroke="null" fill="#05af4c" />
+                <path id="svg_15" d="m66.625017,20.675032" opacity="0.5" stroke-opacity="null" stroke-width="1.5" stroke="null" fill="#05af4c" />
+                <path stroke="null" id="svg_16" d="m65.926879,18.597216c0,0 -0.794442,-6.644918 -0.927013,-6.84724c0.13257,0.202322 10.195507,5.113784 10.195507,5.113784c0,0 7.67961,-4.044733 7.67961,-4.044733c0,0 0,6.356008 0,6.356008c0,0 -16.948105,-0.577819 -16.948105,-0.577819z" stroke-opacity="null" stroke-width="1.5" fill="#05af4c" />
+                <ellipse ry="1.499997" rx="1.499997" id="svg_18" cy="11.67505" cx="64.625021" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="null" fill="#05af4c" />
+                <ellipse ry="1.499997" rx="1.499997" id="svg_19" cy="12.175049" cx="83.124982" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="null" fill="#05af4c" />
+            </g>
+        </svg>
+        <h1 class="title">A Software Developer that thinks beyond.</h1>
+        <a class="view-more green waves-effect waves-light btn" href="#about">View more!</a>
+        <img class="earth" src="res/earth.png">
+    </div>
+    <div class="container">
+        <div class="row" id="about">
+            <h1 id="about" class="center">Profile</h1>
+<!--             <div class="col s3">
+                <img class="dp" src="https://lh3.googleusercontent.com/FzUPn5fSYiOiKtMciqJBS1PZDYVWL9d18fG-e_XwiycrTp3pUZSwkrTO6z6kZSCHbJJ2C8w9ZFqHPfuoSYGU6b9pnrKnYGys2x6N68aEyh8xFSmeOhWagw3_ayqLiKPwsDrr8SwT4leBhVsV1HLORs57lXNBgYQn_2xR_H60hSk82uUyZziqa-p40O-DrEMZ4-lx6zIHDNSS9Rg8PiV-0zLQ-ynHkq4h8JaQSGm3qHGEHC0-SJ1m61JZt6cPzqJ-c1shZyebWSJcPqUjK7XRF4OuMkvTqqNyg6EImNWqrcUbeH1vmvTW33DwQPjb4z1YYUX4OIHJcIcKqbzeqLLz0VI7M4P-5au_uHRVlxZQYMoL1sCpD_bfLYdHyz51BzMDRCUL6g0z0RV6l1mYscdF7qz30VasUxHPmdMOpZ9OaX2EJvMIu_oY9MeIo0PBdVaKK5Oc5cwS9hYTaos4jjAIHU-wneglGWV0leDUYOfGIMwvO4s49NNvgaSHOIebtusjxkUa3crx8jBh2Ag6If1vxN9lnExpcMqDgh25BALNKG2hgO2ywOZ4w1wee6Nqs84Nj2t-BCzDDOPcuMScM-V0UGAOXQvKzpXFeNFCvp4gbxc8QUIXWcQEgw=s919-no">
+            </div> -->
+            <div class="col s12">
+                <p>I study <b>Systems Design Engineering</b> at University of Waterloo. I love to be creative and innovate. I always look to keep things interesting so I made space animations of me flying into space. am always looking for new challenges everyday. Hope you enjoyed my animations!</p>
+                <br>
+                <p class="center"><b>"Software is a great combination between artistry and engineering."</b></p>
+                <p class="center"> - Bill Gates</p>
+            </div>
+        </div>
+        <div class="row" id="projects">
+            <h1 class="center">Projects</h1>
+            <div class="col s12 flex-container">
+                <div class="card flex-card" ng-repeat="s in stories">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="{{s.image}}">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">{{s.title}}<i class="material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">{{s.title}}<i class="material-icons right">close</i></span>
+                        <p>{{s.info}}</p>
+                        <a href="{{s.link}}" target="_blank">{{s.linkAlias}}</a>
+                        <iframe ng-if="s.iframe!==undefined" src="{{s.iframe}}"></iframe>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="infocot">
-        <div class="info" id="info1">
-            <br>
-            <br>
-            <h2>About</h2>
-            <img src="images/kkylface.png" style="width:20%;margin: 0 40%;border-radius:50%" />
-            <p>I am in 2A Systems Design Engineering at University of Waterloo. I enjoy studying the interaction between human users and technology. I strive to create every website and software product to be ergonomically fit and user-friendly to all users.</p>
-            <p>I have chosen this space theme because I believe that innovation is just like the outer space which is always expanding and knows no bound.</p>
-        </div>
-        <div class="info" id="info2">
-            <br>
-            <br>
-            <h2>Skills</h2>
-<!--
-            <h3>Strengths</h3>
-            <ul>
-                <li>Building website user interfaces</li>
-                <li>Indentifying and solving human factors issues</li>
-                <li>Working knowledge of Data Structures and Algorithms</li>
-            </ul>
--->
-            <h3>Languages I Know</h3>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>Javascript</li>
-                <li>jQuery</li>
-                <li>Bootstrap</li>
-                <li>SQL</li>
-                <li>C++</li>
-            </ul>
-            
-            <h3>Languages I am learning</h3>
-            <ul>
-                <li>AngularJS</li>
-                <li>Sass</li>
-            </ul>
-        </div>
-        <div class="info" id="info3">
-            <br>
-            <br>
-            <h2>Experience</h2>
-
-            <a href="http://www1.toronto.ca/wps/portal/contentonly?vgnextoid=71dc5830a898e310VgnVCM10000071d60f89RCRD" target="blank">
-                <img class="logo" src="images/City_of_Toronto_Logo.png" width="200px"></img>
-            </a>
-            <h3>Toronto Water Integrated Technology Management Unit</h3>
-            <h3>Web Designer</h3>
-            <h4>Sept 2014 - Dec 2014</h4>
-            <ul>
-                <li>Launched the Toronto Water Integrated Technology Management Unit's web presence project to provide the latest news and updates to other teams across Toronto Water Division</li>
-                <li>Built the intranet website using HTML5, Javascript, CSS3 on Adobe Dreamweaver</li>
-                <li>Developed an interactive KPI report database application on Oracle Application Express using SQL</li>
-                <li>Designed the logo for the unit using Adobe Illustrator</li>
-                <li>Produced diagrams and illustrations for KPI Report on Microsoft Visio</li>
-            </ul>
-
-            <hr>
-
-            <a href="http://www.mto.gov.on.ca/english/" target="blank">
-                <img class="logo" src="images/ontario_logo.png" width="200px"></img>
-            </a>
-            <h3>Ontario Ministry of Transportation</h3>
-            <h3>NGD Operational Analyst </h3>
-            <h4>Jan 2014 - May 2014</h4>
-            <ul>
-                <li>Designed a SharePoint team website to provide updates and share documents</li>
-                <li>Worked on the project release team to implement the New Generation Desktop Project across Road User Safety Division to successfully upgrade over 500 computers to Windows 7</li>
-                <!--
-                <li>Provided critical liaison between RUS users and Infrastructure Technology Service</li>
-                <li>Communicated with staff across Ontario to remediate and log issues</li>
-                <li>Maintain log of project progress through reports and spreadsheets</li>
-                -->
-                <li>Worked with the Ministry's IT Field Services to troubleshoot various proprietary software compatibility issues and resolved them under tight deadlines to avoid disruption to business</li>
-            </ul>
-
-            <hr>
-
-            <h3>Tertec Enterprises Inc.</h3> 
-            <h3>Electrical Engineering Assistant</h3>
-            <h4>Feb.2012 - Jun.2012</h4>
-            <ul>
-                <li>Collaborated with technicians to successfully assemble an automatic system tester for Tesla Motors</li>
-                <li>Built electrical cables of different gauges for the testers</li>
-                <li>Soldered intricate electrical components on circuit boards as indicated on circuit schematics</li>
-                <li>Catalogued various types of resistors for inventory</li>
-                <li>Completed assigned tasks punctually and independently with minimal supervision</li>
-            </ul>
-
-            <!--
-            <h3>Yip’s Canada </h3>
-            <h3>Summer Camp Teacher                      <span>Jul. 2013 - Aug. 2013</span> </h3>
-            <ul>
-            <li>Tutored elementary students in math to understand important concepts                           thoroughly</li>
-            <li>Educated students about teamwork and leadership through games and activities</li>
-            <li>Setting computers up for students use</li>
-            </ul>
-            -->
-
-        </div>
-        <div class="info" id="info4">
-            <br>
-            <br>
-            <h2>Projects</h2>
-            <h3>SCIKIC</h3>
-            <p>SCIKIC is an educational quiz game for students to study and prepare for tests while playing a soccer game. It also provides real-time communication chatroom between players. My partner and I developed this during the Global Koding Hackathon.</p>
-            <img class="projectimg" src="images/gamehome.PNG" width="250px" height="130px" />
-            <img class="projectimg" src="images/game.PNG" width="250px" height="130px" />
-            <br/>
-            <a class="externallinks" target="blank" href="https://github.com/KennyKYLam/SCIKICK">Available on Github</a>
-            <hr>
-            <h3>KKYLJAPAN</h3>
-            <p>KKYLJAPAN is a travel blog site I am working on currently after a trip to Japan last year.</p>
-            <img class="projectimg" src="images/kkyljapan1.PNG" width="250px" height="130px" />
-            <img class="projectimg" src="images/kkyljapan2.PNG" width="250px" height="130px" />      
-            <br/>
-            <a class="externallinks" target="blank" href="http://kennykylam.github.io/KKYLJAPAN">Visit Site </a>
-            <br>
-            <a class="externallinks" target="blank" href="https://github.com/KennyKYLam/KKYLJAPAN">Available on Github</a>
-        </div>
-        <div class="info" id="info5">
-            <br>
-            <br>
-            <h2>Education</h2>
-            <h3>Candidate for Bachelor of Applied Science</h3>
-            <p>Systems Design Engineering, Honours, CO-OP Program, University of Waterloo Sept. 2013 - present</p>
-
-            <img class="logo" src="images/UniversityOfWaterloo_logo.png" width="300px"></img>
-            <h3>Relevant Courses:</h3>
-            <ul>
-                <li>SYDE 223 - Data Structures and Algorithms</li>
-                <li>SYDE 192 - Digital Systems</li>
-                <li>SYDE 121 - Digital Computation</li>
-                <li>SYDE 261 - Design, Systems, and Society</li>
-                <li>SYDE 162 - Human Factors in Design</li>
-
-            </ul>
-        </div>
-        <div class="info" id="info6">
-            <h2>Contact Me</h2>
-            <!--<b>Email: </b> kky2lam@uwaterloo.ca-->
-            <ul class="soc">
-                <li>
-                    <a class="soc-github" href="https://github.com/KennyKYLam" target="blank"></a>
-                </li>
-                <li>
-                    <a class="soc-linkedin" href="https://linkedin.com/in/kennykylam" target="blank"></a>
-                </li>
-                <li>
-                    <a class="soc-email1 soc-icon-last" href="mailto:kky2lam@uwaterloo.ca"></a>
-                </li>
-            </ul>
-            <br>
-        </div>
-        <div class="gototop"> <a href="#top"> Go to top </a>
-        </div>
-
-    </div>
-    <div class="footer">
-        &copy;2014 KKYL
-        <!--
-        <ul>
-            <li>&copy; KKYL</li>
-            <li><a>About</a>
-            </li>
-            <li><a> Legal</a>
-            </li>
-        </ul>
-        -->
-    </div>
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.1.0/velocity.min.js"></script>
-    <script src="main.js"></script>
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-59391404-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
 </body>
 
 </html>
-
