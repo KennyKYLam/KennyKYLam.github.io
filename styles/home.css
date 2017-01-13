@@ -2,7 +2,7 @@ html, body {
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	background-color: #fff;
+	background-color: #4CAF50;
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	color: #333;
@@ -11,7 +11,8 @@ html, body {
 
 h1 {
 	font-size: 36px;
-	color: #4CAF50;
+	/*color: #4CAF50;*/
+	color: #333;
 }
 
 a {
@@ -120,6 +121,24 @@ nav .brand-logo {
 
 .flex-card {
 	width:  225px;
+	color: #333;
+}
+
+#jobs .card-image {
+	padding: 30px 10px;
+}
+
+#jobs .card-title {
+    color: #4CAF50 !important;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#jobs .card ul li {
+    list-style-type: disc;
+    list-style-position:inside;
+    font-size: 13px;
+    margin: 5px 0;
 }
 
 @media screen and (max-device-width: 1000px) {

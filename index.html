@@ -35,15 +35,18 @@
             <ul class="right hide-on-med-and-down">
                 <li><a href="#about">Profile</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="collapsible.html">Life</a></li>
-                <li><a href="mobile.html">Blog</a></li>
+                <li><a href="#jobs">Jobs</a></li>
+                <li><a href="#life">Life</a></li>
+                <li><a href="#">Blog</a></li>
             </ul>
-            <ul class="side-nav" id="mobile-demo">
+            <!--             <ul class="side-nav" id="mobile-demo">
                 <li><a href="#about">Profile</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="collapsible.html">Javascript</a></li>
-                <li><a href="mobile.html">Mobile</a></li>
-            </ul>
+                <li><a href="#jobs">Jobs</a></li>
+                <li><a href="#">Life</a></li>
+                <li><a href="#">Life</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul> -->
         </div>
     </nav>
     <div class="jumbotron">
@@ -76,7 +79,7 @@
     <div class="container">
         <div class="row" id="about">
             <h1 id="about" class="center">Profile</h1>
-<!--             <div class="col s3">
+            <!--             <div class="col s3">
                 <img class="dp" src="https://lh3.googleusercontent.com/FzUPn5fSYiOiKtMciqJBS1PZDYVWL9d18fG-e_XwiycrTp3pUZSwkrTO6z6kZSCHbJJ2C8w9ZFqHPfuoSYGU6b9pnrKnYGys2x6N68aEyh8xFSmeOhWagw3_ayqLiKPwsDrr8SwT4leBhVsV1HLORs57lXNBgYQn_2xR_H60hSk82uUyZziqa-p40O-DrEMZ4-lx6zIHDNSS9Rg8PiV-0zLQ-ynHkq4h8JaQSGm3qHGEHC0-SJ1m61JZt6cPzqJ-c1shZyebWSJcPqUjK7XRF4OuMkvTqqNyg6EImNWqrcUbeH1vmvTW33DwQPjb4z1YYUX4OIHJcIcKqbzeqLLz0VI7M4P-5au_uHRVlxZQYMoL1sCpD_bfLYdHyz51BzMDRCUL6g0z0RV6l1mYscdF7qz30VasUxHPmdMOpZ9OaX2EJvMIu_oY9MeIo0PBdVaKK5Oc5cwS9hYTaos4jjAIHU-wneglGWV0leDUYOfGIMwvO4s49NNvgaSHOIebtusjxkUa3crx8jBh2Ag6If1vxN9lnExpcMqDgh25BALNKG2hgO2ywOZ4w1wee6Nqs84Nj2t-BCzDDOPcuMScM-V0UGAOXQvKzpXFeNFCvp4gbxc8QUIXWcQEgw=s919-no">
             </div> -->
             <div class="col s12">
@@ -91,21 +94,57 @@
             <div class="col s12 flex-container">
                 <div class="card flex-card" ng-repeat="s in stories">
                     <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="{{s.image}}">
+                        <img class="activator" ng-src="{{s.image}}">
                     </div>
                     <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">{{s.title}}<i class="material-icons right">more_vert</i></span>
+                        <span class="card-title activator grey-text text-darken-4">{{s.title}}
+                        <!-- <i class="material-icons right">more_vert</i> -->
+                        </span>
+                        <p>{{s.info}}</p>
                     </div>
                     <div class="card-reveal">
                         <span class="card-title grey-text text-darken-4">{{s.title}}<i class="material-icons right">close</i></span>
-                        <p>{{s.info}}</p>
-                        <a href="{{s.link}}" target="_blank">{{s.linkAlias}}</a>
-                        <iframe ng-if="s.iframe!==undefined" src="{{s.iframe}}"></iframe>
+                        <a ng-if="s.link!==undefined" href="{{s.link}}" target="_blank">{{s.linkAlias}}</a>
+                        <iframe ng-if="s.iframe!==undefined" ng-src="{{s.iframe}}"></iframe>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="row" id="jobs">
+            <h1 class="center">Job Experience</h1>
+            <div class="col s12 flex-container">
+                <div class="card flex-card" ng-repeat="s in jobs">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" ng-src="{{s.image}}">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">{{s.title}}
+                        </span>
+                        <p>{{s.company}}</p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">{{s.title}}<i class="material-icons right">close</i></span>
+                        <!--                         <a ng-if="s.link!==undefined" href="{{s.link}}" target="_blank">{{s.linkAlias}}</a> -->
+                        <ul>
+                            <li ng-repeat="work in s.work_done">{{work}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="life">
+            <h1 class="center">Life</h1>
+            <p class="center">Follow my instagram <a href="https://www.instagram.com/superkenny101/" target="_blank">@superkenny101</a>.</p>
+        </div>
     </div>
+    <footer class="green page-footer">
+        <div class="footer-copyright">
+            <div class="container">
+                © 2017 Copyright Kenny Lam
+<!--                 <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
